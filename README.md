@@ -45,6 +45,10 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) and navigate to **API Demo** to see the implementation.
 
+Use this account below to login and start testing demo:
+email: 770826899@qq.com
+password: abc951120
+
 ### Key Files
 
 - `frontend/src/api/generated/` - Auto-generated API client (do not edit)
