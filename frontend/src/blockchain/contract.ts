@@ -1,8 +1,8 @@
 import { createPublicClient, createWalletClient, http, type Address } from 'viem';
-import { mainnet } from 'viem/chains';
+import { mainnet, sepolia } from 'viem/chains';
 import { CHAIN_ID, CONTRACT_ADDRESS } from './config';
 
-const chain = CHAIN_ID === 1 ? mainnet : mainnet; // Add your chain (e.g. sepolia) when needed
+const chain = CHAIN_ID === 1 ? mainnet : sepolia;
 
 export const publicClient = createPublicClient({
   chain,

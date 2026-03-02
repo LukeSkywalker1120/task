@@ -1,9 +1,9 @@
 import { useState, useCallback, useEffect } from 'react';
 import { createWalletClient, custom, type Address } from 'viem';
-import { mainnet } from 'viem/chains';
+import { mainnet, sepolia } from 'viem/chains';
 import { CHAIN_ID, readBalance, writeTransfer } from '../blockchain';
 
-const chain = CHAIN_ID === 1 ? mainnet : mainnet;
+const chain = CHAIN_ID === 1 ? mainnet : sepolia;
 
 export type TxStatus = 'idle' | 'pending' | 'success' | 'error';
 
